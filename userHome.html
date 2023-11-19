@@ -1,0 +1,233 @@
+<html>
+<head> 
+  <title>Santan Segar Ordering System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: url("images/bg.jpg");
+        background-attachment: fixed;
+        background-size:cover;
+    }    
+
+    .header {
+        background-color: beige;
+        height: 80px;
+        border-bottom:10px solid #c19a6b;
+        width: 100%;
+    }
+
+    .userProduct {
+        width: 380px;
+        height: 120px;
+        position: absolute;
+        left: 90px;
+        top: 120px;
+        border-radius: 15px;
+        border: 3px solid #7B3F00;
+        border-style: dashed;
+        background-color: beige;
+        color: #7B3F00;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .userProduct:hover {
+      background-color: #c19a6b;
+      color: white;
+      transition: .4s;
+      border-color: white;
+      font-weight: bold;
+    }
+
+    .viewOrder {
+      width: 380px;
+      height: 120px;
+      position: absolute;
+      left: 520px;
+      top: 120px;
+      border-radius: 15px;
+      border: 3px solid white;
+      background-color: green;
+      color: yellow;
+      font-size: 25px;
+      border-style: dashed;
+      font-weight: bold;
+    }
+
+    .viewOrder:hover {
+      background-color: yellow;
+      color: green;
+      transition: .4s;
+      border-color: green;
+      font-weight: bold;
+    }
+
+    .stock {
+      width: 380px;
+      height: 120px;
+      position: absolute;
+      left: 90px;
+      top: 300px;
+      border-radius: 15px;
+      border: 3px solid white;
+      background-color: green;
+      color: yellow;
+      font-size: 25px;
+      border-style: dashed;
+      font-weight: bold;
+    }
+
+    .stock:hover {
+      background-color: yellow;
+      color: green;
+      transition: .4s;
+      border-color: green;
+      font-weight: bold;
+    }
+
+    .base {
+      width: 1000px;
+      height: 560px;
+      position: absolute;
+      left: 270px;
+      top: 120px;
+      border-radius: 15px;
+      border: 2px solid white;
+      background-color: rgba(255, 255, 255, 0.685);
+      
+    }
+
+    #productIcon {
+      position: absolute;
+      left: 180px;
+      top: 168px;
+      font-size: 25px;
+      color: White;
+    }
+
+    #userIcon {
+      position: absolute;
+      left: 575px;
+      top: 165px;
+      font-size: 25px;
+      color: White;
+    }
+
+    #stockIcon {
+      position: absolute;
+      left: 100px;
+      top: 345px;
+      font-size: 30px;
+      color: White;
+    }
+
+    .h1 {
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: #7B3F00;
+      font-size: 40px;
+    }
+
+    .stockSearch {
+      width: 380px;
+      height: 120px;
+      position: absolute;
+      left: 520px;
+      top: 300px;
+      border-radius: 15px;
+      border: 3px solid white;
+      background-color: green;
+      color: yellow;
+      font-size: 25px;
+      border-style: dashed;
+      font-weight: bold;
+    }
+
+    .stockSearch:hover {
+        background-color: yellow;
+        color: green;
+        transition: .4s;
+        border-color: green;
+        font-weight: bold;
+    }
+
+    #searchIcon {
+        position: absolute;
+        left: 530px;
+        top: 348px;
+        font-size: 25px;
+        color: white;
+    }
+
+    #btnLogout {
+        background-color: yellow;
+        color: green;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: 3px solid red;
+        border-radius: 10px;
+        border-style: dashed;
+        font-weight: bold;
+        width: 10%;
+        position: absolute;
+        left: 1350px;
+        top: 20px;
+    }
+
+    #btnLogout:hover {
+        background-color: red;
+        color: black;
+        border-color: black;
+    }
+
+    #logoutIcon {
+        position: absolute;
+        left: 1470px;
+        top: 30px;
+        font-size: 20px;
+        color: red;
+    }
+
+    .h5 {
+            color: #66350F;
+            font-size: 50px;
+            position: absolute;
+            left: 635px;
+            top: 10px;
+        
+        }
+
+    
+    
+  </style>
+</head>
+<body>
+  <div class="header">
+        <h5 class="h5"> Santan Segar </h5>
+        <a href="userLogin.php"><input type="button" id="btnLogout" value="Logout"></a><i class="fa-solid fa-right-from-bracket" id="logoutIcon"></i>
+    </div>
+
+  <div class="base">
+    <h1 class="h1">USER MENU</h1>
+    <a href="userProduct.php"><input type="button" value="Product" class="userProduct">
+      <i class="fa-sharp fa-solid fa-cubes" id="productIcon"></i></a>
+    <a href="userViewOrder.php"><input type="button" value="View Order" class="viewOrder"></a>
+      <i class="fa-solid fa-user" id="userIcon"></i>
+    <a href="stockList2.php"><input type="button" value="View Ingredients Stock" class="stock"></a>
+      <i class="fa-sharp fa-solid fa-cubes" id="stockIcon"></i>
+        <a href="stockSearch.php"><input type="button" value="Search Ingredients Stock" class="stockSearch"></a><i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        
+
+  </div>
+  
+</body>
+</html>

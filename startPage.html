@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santan Segar Smart Order</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("images/bg.jpg");
+            background-attachment: fixed;
+            background-size:cover;
+                
+        }
+
+        .header {
+            background-color: beige;
+            height: 80px;
+            border-bottom:10px solid #c19a6b;
+            width: 100%;
+        }
+
+        .h5 {
+            color: #66350F;
+            font-size: 50px;
+            position: absolute;
+            left: 635px;
+            top: 10px;
+        
+        }
+
+        .table {
+            margin-top: 8vh;
+            width: 97%;
+            height: 570px;
+            margin-left: 3vh;
+            margin-right: 3vh;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            border-style: dashed;
+            border-color: #c19a6b;
+           
+        }
+
+        .table h1{
+            color: #66350F;
+            font-size: 50px;
+            padding: 128px 3%;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .table .Admin {
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 480px;
+            left: 100px;
+        }
+
+        .table .Customer{
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 480px;
+            left: 350px;
+        }
+
+        #userProduct {
+            width: 230px;
+            height: 40px;
+            border-radius: 20px;
+            border: 3px solid #7B3F00;
+            border-style: dashed;
+            background-color: beige;
+            color: #7B3F00;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #userProduct:hover {
+            background-color: #c19a6b;
+            color: white;
+            transition: .4s;
+            border-color: white;
+            font-weight: bold;
+        }
+
+        .table img{
+            width:13%;
+            height: 150px;
+        }
+
+        .santan {
+            position: absolute;
+            top: 280px;
+            left: 880px;
+        }
+
+        .kelapa{
+            position: absolute;
+            top: 280px;
+            left: 1080px;
+        }
+
+        .kerisik{
+            position: absolute;
+            top: 440px;
+            left: 1000px;
+        }
+
+        .cili {
+            position: absolute;
+            top: 440px;
+            left: 1200px;
+        }
+
+
+    </style>    
+</head>
+<body>
+
+    <div class="header">
+        <h5 class="h5"> Santan Segar </h5>
+    
+    </div>
+    <div class="table">
+        <h1>Welcome Dear Users,<br>Which Category Are You?</h1>
+        <a href="adminLogin.php"><input type="button" class="Admin" value="Admin" id="userProduct"></a>
+        <a href="userLogin.php"><input type="button" class="Customer" value="Customer" id="userProduct"></a>
+        <img src="images/santan.jpg" class="santan">
+        <img src="images/kelapaparut.jpg" class="kelapa">
+        <img src="images/kerisik.jpeg" class="kerisik">
+        <img src="images/cili giling.jpg" class="cili">
+    </div>
+    
+</body>
+</html>
